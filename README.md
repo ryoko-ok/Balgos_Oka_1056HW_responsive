@@ -1,0 +1,1 @@
+# Balgos_Oka_1056HW_responsive
