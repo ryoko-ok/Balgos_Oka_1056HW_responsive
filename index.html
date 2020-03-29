@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Cameron's Brewing</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="UTF-8">
+	<!-- in mobile set initial zoom level of page to 100%, set site size to equal
+	device width not 980px-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Welcome to Cameron's Brewery 2.0</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+	rel="stylesheet">
 </head>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
 <body>
 	<div class="container">
 		<h1 class="hidden">Cameron's Brewing</h1>
-
 <!---------------------- Header ---------------------->
 		<header id="mainHeader">
+			<h2 class="hidden">Main Navigation</h2>
 			<div id="logoHeader">
+				<h3 class="hidden">headerLogo</h3>
 				<img src="images/camerons_logo.svg" alt="Cameron's Brewing Logo"></div>
 			<nav id="mainNav">
-				<h2 class="hidden">Main Navigation</h2>
+				<h3 class="hidden">headerNav</h3>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="products.html">Products</a></li>
@@ -24,7 +36,6 @@
 				</ul>
 			</nav>
 		</header>
-
 <!---------------------- Main ---------------------->
 		<main>
 			<section>
@@ -34,80 +45,65 @@
 
 			<section id="subCon">
 				<h2 class="hidden">Sub Contents</h2>
-					<div class="box"><h3>Products</h3></div>
-					<div class="box"><h3>Order</h3></div>
-					<div class="box"><h3>Events</h3></div>
-					<div class="box"><h3>Contacts</h3></div>
+					<div class="box"><a>Products</a></div>
+					<div class="box"><a>Order</a></div>
+					<div class="box"><a>Events</a></div>
+					<div class="box"><a>Contacts</a></div>
 			</section>
 
 			<section id="featuredCon">
+				<div class=featuredText>
 				<h2>Featured Beer</h2>
-				<div><p>
-            is committed to brewing beer of exceptional taste and quality. Its brewing
-            experts relentlessly pursue the development of new styles and the perfection of its
-            classic ales and lagers using the world’s finest all-natural ingredients.</p></div>
+					<p>is committed to brewing beer of exceptional taste and quality.
+					Its brewing experts relentlessly pursue the development of new
+					styles and the perfection of its classic ales and lagers using
+					the world’s finest all-natural ingredients.</p>
+				</div>
 
-            	<div class="box"><img src="#">product1</div>
-            	<div class="box"><img src="#">product2</div>
-            	<div class="box"><img src="#">product3</div>
+				<div class="ImageProd"></div>
+					<div class="box ImageProd1"><!--<img src="#"-->Product1</div>
+					<div class="box ImageProd2"><!--<img src="#"-->Product2</div>
+					<div class="box ImageProd3"><!--<img src="#"-->Product3</div>
 			</section>
-
-
-			<section>
-				<h2></h2>
-			</section>
-
 		</main>
-
-
 <!---------------------- Footer ---------------------->
-		<hr noshade size=15 color=gray>
-
 		<footer class="mainFooter">
 			<h2 class="hidden">Footer</h2>
-			<div class="footerContainer">
-				<div class="logoFooter">
-				<h3 class="hidden">Footer logo</h3>
-				<img src="images/camerons_logo.svg" alt="Cameron's Brewing Logo"></div>
-				
-				<div class="socialMedia">
-		        <h2 class="hidden">Social Media</h2>
-		        <ul id="iconNav">
-		            <li id="facebook">
-		              <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
-		            </li>
-		            <li id="twitter">
-		              <a href="#"><img src="images/twitter.svg" alt="twitter"></a>
-		            </li>
-		            <li id="pinterest">
-		            	<a href="#"><img src="images/pinterest.svg" alt="pinterest"></a>
-		            </li>
-		            <li id="instagram">
-		              <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
-		           </li>
-		        </ul>
-		      	</div> 
-		    </div>    			
+				<div id="socMedia">
+					<h3 class="hidden">Social Media</h3>
+					<div class="ig">
+						<a href="https://www.instagram.com"><img src="images/instagram.svg" alt="instagram"></a>
+					</div>
+					<div class="t">
+						<a href="https://www.twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
+					</div>
+					<div class="fb">
+						<a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook"></a>
+					</div>
+					<div class="pt">
+						<a href="https://www.pinterest.com"><img src="images/pinterest.svg" alt="pinterest"></a>
+					</div>
+				</div>
 
-			<div class="footerContainer">
-			<nav id="footerNav">
-				<h2 class="hidden">Footer Navigation</h2>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="products.html">Order</a></li>
-					<li><a href="event.html">Events</a></li>
-					<li><a href="contacts.html">Contacts</a></li>
-				</ul>
-			</nav>
+				<nav id="footerNav">
+					<h3 class="hidden">Footer Navigation</h3>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="products.html">Order</a></li>
+							<li><a href="event.html">Events</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+						</ul>
+				</nav>
 
+				<div id="logoFooter">
+					<h3 class="hidden">Footer logo</h3>
+					<img src="images/camerons_logo.svg" alt="Cameron's Brewing Logo">
+				</div>
 
-			<div class="copyright"><p>Copyright/ All rights</p></div>
-			</div>
-
-
-
-
+				<div class="copyright">
+					<p>&copy; 2020 Cameron Brewery</p>
+				</div>
 		</footer>
 	</div>
 </body>

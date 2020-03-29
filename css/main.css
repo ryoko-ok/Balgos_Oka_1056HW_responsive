@@ -33,47 +33,60 @@ p {
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-  margin: 5px;
+  flex: 1 1 auto;
+  padding: 20px;
+  margin: 10px;
+}
+
+.box {
+  flex: 1 1 auto;
+  padding: 20px;
+  margin: 10px;
 }
 
 /* ------------ header ------------ */
 
 #mainHeader {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   padding: 10px 0;
 }
 
 #logoHeader {
   width: 150px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 #mainNav {
-  width: 500px;
+  width: 430px;
   height: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
 }
 
 #mainNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0;
 }
 
-#mainNav ul li {  
+#mainNav ul li {
   font-size: 16px;
   font-weight: bold;
-  display: inline;
+  display: flex;
   cursor: pointer;
-  margin-left: 25px;
+  padding-left: 5px;
 }
 
 #mainNav ul li a {
+  margin-left: 0 auto;
   color: #2073a8;
   padding: 5px;
+  text-decoration: none;
+  background-color: #ACCCF9;
+  height: 20px;
+  border-radius: 5px;
 }
 
 #mainNav ul li a:hover {
@@ -93,19 +106,17 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 0 auto;
   color: #fff;
 }
 
 #featuredCon {
-  padding:  40px; 
-  max-width: 700px;
+  margin: 0 auto;
+  max-width: 600px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   color: #fff;
 }
-
 
 #featuredCon p {
   font-size: 18px;
@@ -113,17 +124,12 @@ p {
   text-align: center;
 }
 
-#featuredCon img {
-  max-width: 200px;
+.ImageProd1, .ImageProd2, .ImageProd3 {
+  height: 300px;
 }
 
 /* ------------ Footer ------------ */
 
-.footerContainer {
-  max-width: 940px;
-  display: inline-flex;
-  flex-direction: row;
-}
 .mainFooter {
   display: flex;
   flex-direction: column;
@@ -131,49 +137,24 @@ p {
   padding: 0 20px;
 }
 
-.logoFooter, .socialMedia {
-  color: white;
-  text-align: center;
+#footerContainer {
+  max-width: 940px;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 #logoFooter {
   width: 100px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-
-.socialMedia {
-  height: 50px;
-  width: 300px;
-  margin-top: 20px;
-  margin-left: auto;
-}
-
-.socialMedia img {
-  width: 50px;
-  margin: 5px;
-}
-
-
-.copyright {
-  padding: 0;
-  margin: 20px 20px 50px auto;
-}
-
-
-#logoFooter {
-  max-width: 150px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  margin: 0 auto;
 }
 
 #footerNav {
+  display: inline-block;
+  flex-direction: row;
   width: 400px;
   height: 25px;
-  margin-top: 45px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 #footerNav ul {
@@ -181,7 +162,7 @@ p {
   padding: 0;
 }
 
-#footerNav ul li {  
+#footerNav ul li {
   font-size: 14px;
   display: inline;
   cursor: pointer;
@@ -191,6 +172,10 @@ p {
 #footerNav ul li a {
   color: #2073a8;
   padding: 5px;
+  text-decoration: none;
+  background-color: #ACCCF9;
+  height: 20px;
+  border-radius: 5px;
 }
 
 #footerNav ul li a:hover {
@@ -198,96 +183,127 @@ p {
   background-color: #ddeff7;
 }
 
-/* ------------ SNS Icons ------------ */
-
-.socialMedia {
-  height: 45px;
-  margin-left: auto;
-  margin-top: 28px;
-  margin-right: 10px;
+#socMedia {
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
 }
 
-#iconNav img {
-  width: 45px;
-  height: 45px;
+.ig, .t, .fb, .pt {
+  width: 50px;
 }
 
-#iconNav {
-  list-style: none;
-  margin: 0;
-  padding: 0
+.copyright {
+  margin: auto;
+  padding-top: 5px;
 }
 
-#iconNav li {
-  display: inline;
-  margin-right: 10px;
-}
+@media screen and (min-width: 600px) {
 
-#iconNav li a {
-  filter: grayscale(100%);
-}
+  #mainHeader {
+    display: flex;
+    flex-direction: row;
+  }
 
-#iconNav li a:hover {
-  filter: grayscale(0%);
-}
+  #logoHeader {
+    width: 120px;
+  }
 
+  #mainNav {
+    width: 450px;
+    padding-top: 25px;
+  }
 
-@media screen and (min-width: 25em) { 
+  .box {
+    background-color: lightgreen; #ACCCF9
+  }
 
-#featuredCon {
-  margin: 10px; 
-  text-align: center;
-}
+  .mainImage {
+    margin-bottom: 10px;
+  }
 
-#featuredCon p {
-  font-size: 16px;
-  color: gray;
-  text-align: center;
-}
+  #subCon {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
 
+  #featuredCon {
+    display: flex;
+    flex-direction: row;
+  }
 
-}
+  #featuredConText{
+    width: 500px;
+  }
 
-@media screen and (min-width: 40em) { 
+  .ImageProd1, .ImageProd2, .ImageProd3  {
+    height: 130px;
+    background-color: lightgreen;
+  }
 
-#mainHeader {
-  display: flex;
-  flex-direction: row;
-}
+  #mainFooter {
+    display: flex;
+    flex-direction: row;
+  }
 
-#mainFooter {
-  display: flex;
-  flex-direction: row;
-}
+  @media screen and (min-width: 1200px) {
 
+    #mainHeader {
+      display: flex;
+      flex-direction: row;
+      max-width: 960px
+    }
 
-.box {
-  flex: 1 1 auto;
-  padding: 20px;
-  margin: 10px;
-}
+    #logoHeader {
+      width: 120px;
+    }
 
+    #mainNav {
+      width: 800px;
+      padding-top: 25px;
+    }
 
-.mainNav {
-  flex: 0 1 600px; 
-}
+    .box {
+      background-color: lightblue;
+    }
 
+    .mainImage {
+      margin-bottom: 10px;
+    }
 
-#subCon {
-  display: flex;
-  flex-direction: row;
-}
+    #subCon {
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 10px;
+    }
 
-#featuredCon {
-  display: flex;
-  flex-direction: row;
-}
+    #featuredCon {
+      display: flex;
+      flex-direction: column;
+    }
 
+    #featuredConText{
+      width: 500px;
+    }
 
-#mainFooter {
-  display: flex;
-  flex-direction: row;
-}
+    .ImageProd {
+      display: flex;
+      flex-direction: row;
+    }
 
+    .ImageProd1, .ImageProd2, .ImageProd3  {
+      height: 130px;
+      background-color: lightblue;
+    }
 
-
+    #mainFooter {
+      display: flex;
+      flex-direction: row;
+    }
