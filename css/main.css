@@ -36,6 +36,15 @@ p {
   margin: 5px;
 }
 
+#br:before {
+  content: "Featured Beer\A";
+  white-space: pre ;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #004FBD;
+  padding: 10px 0;
+}
+
 /* ------------ header ------------ */
 
 #mainHeader {
@@ -96,34 +105,34 @@ p {
   color: #fff;
 }
 
-#featuredCon {
-  padding:  40px; 
-  max-width: 700px;
+.featuredCon {
+  padding:  20px 40px; 
+  margin: 0 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   color: #fff;
 }
 
 
-#featuredCon p {
+.featuredCon p {
   font-size: 18px;
   color: gray;
   text-align: center;
 }
 
-#featuredCon img {
-  max-width: 200px;
+.featuredPic {
+  max-width: 150px;
+  height: 150px;
 }
-
 /* ------------ Footer ------------ */
 
 .footerContainer {
   max-width: 940px;
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
 }
+
 .mainFooter {
   display: flex;
   flex-direction: column;
@@ -278,15 +287,16 @@ p {
   flex-direction: row;
 }
 
-#featuredCon {
+.featuredCon {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-
-#mainFooter {
-  display: flex;
+.footerContainer {
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 
