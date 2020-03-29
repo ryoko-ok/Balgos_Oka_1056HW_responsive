@@ -1,0 +1,293 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #004FBD;
+}
+
+h3 {
+  font-size: 16px;
+  color: gray
+}
+
+p {
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #efefef;
+  max-width: 980px;
+}
+
+.box {
+  background-color: #ACCCF9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+/* ------------ header ------------ */
+
+#mainHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+#logoHeader {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#mainNav {
+  width: 500px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+#mainNav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#mainNav ul li {  
+  font-size: 16px;
+  font-weight: bold;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+#mainNav ul li a {
+  color: #2073a8;
+  padding: 5px;
+}
+
+#mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #ddeff7;
+}
+
+/* ------------ Main image ------------ */
+
+.mainImage {
+  height: 300px;
+}
+
+/* ------------ Sub Contents ------------ */
+
+#subCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+#featuredCon {
+  padding:  40px; 
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+
+#featuredCon p {
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+}
+
+#featuredCon img {
+  max-width: 200px;
+}
+
+/* ------------ Footer ------------ */
+
+.footerContainer {
+  max-width: 940px;
+  display: inline-flex;
+  flex-direction: row;
+}
+.mainFooter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.logoFooter, .socialMedia {
+  color: white;
+  text-align: center;
+}
+
+#logoFooter {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.socialMedia {
+  height: 50px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.socialMedia img {
+  width: 50px;
+  margin: 5px;
+}
+
+
+.copyright {
+  padding: 0;
+  margin: 20px 20px 50px auto;
+}
+
+
+#logoFooter {
+  max-width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#footerNav {
+  width: 400px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+#footerNav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#footerNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+#footerNav ul li a {
+  color: #2073a8;
+  padding: 5px;
+}
+
+#footerNav ul li a:hover {
+  padding: 5px;
+  background-color: #ddeff7;
+}
+
+/* ------------ SNS Icons ------------ */
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#iconNav li a {
+  filter: grayscale(100%);
+}
+
+#iconNav li a:hover {
+  filter: grayscale(0%);
+}
+
+
+@media screen and (min-width: 25em) { 
+
+#featuredCon {
+  margin: 10px; 
+  text-align: center;
+}
+
+#featuredCon p {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+
+}
+
+@media screen and (min-width: 40em) { 
+
+#mainHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+#mainFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.box {
+  flex: 1 1 auto;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.mainNav {
+  flex: 0 1 600px; 
+}
+
+
+#subCon {
+  display: flex;
+  flex-direction: row;
+}
+
+#featuredCon {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#mainFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
